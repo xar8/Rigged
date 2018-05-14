@@ -18,13 +18,8 @@ int main()
     }
   }while( name != "q" );
 
-  //display out how many people have been entered into the lottery
-  if( lottery.entries() > 0 )
-  {
-    cout<<"The lottery has "<<lottery.entries()<<" names.\n";
-
-    //display the rigged winner: the very last name entered into the lottery
-    cout<<"The winner is: "<<lottery.winner()<<endl;
-  }
+  //display the rigged winner: the very last name entered into the lottery
+  cout<<"The winner is: "<<lottery.winner()<<endl;
+  
   return 0;
 }
